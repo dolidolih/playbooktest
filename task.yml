@@ -1,9 +1,6 @@
 ---
-- hosts: all
-  remote_user: root
-  # Execute commands directly instead of over SSH
-  # connection: local
-  # Tasks: now what to do in this play
+- name: Check OS Version to Target Server
+  hosts: all
   tasks:
     # Ansible prints this name when running the playbook
     - name: print pass
